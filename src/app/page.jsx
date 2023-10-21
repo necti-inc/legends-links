@@ -1,0 +1,10 @@
+import style from "./page.module.css";
+import theme from "./theme";
+
+export default function Home() {
+  return (
+    <div>
+      <h1>Hello World</h1>
+    </div>
+  );
+}
