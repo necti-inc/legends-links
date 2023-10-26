@@ -1,6 +1,4 @@
 import "./globals.css";
-import Head from "next/head";
-
 export const metadata = {
   title: "Dustin's Links",
   description: "Links for Dustin Williams",
@@ -8,8 +6,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
-      <Head>
+    <html lang={"en"}>
+      <head>
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
@@ -25,20 +23,23 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         />
-      </Head>
+        <title>Dustin's Links</title>
+      </head>
 
-      {/* Google Tag Manager (noscript) */}
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-TZW8W3CK"
-          height="0"
-          width="0"
-          style={{ display: "none", visibility: "hidden" }}
-        ></iframe>
-      </noscript>
-      {/* End Google Tag Manager (noscript) */}
+      <body>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TZW8W3CK"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
 
-      <div className="container">{children}</div>
-    </>
+        <div className="container">{children}</div>
+      </body>
+    </html>
   );
 }
