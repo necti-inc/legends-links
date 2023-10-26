@@ -1,0 +1,141 @@
+.rootContainer {
+    background-image: url("../../public/background-image.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 9%;
+    margin-left: 12%;
+}
+
+.rightContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 9%;
+}
+
+
+.circleImage {
+    width: 375px; /* Set your desired width */
+    height: 375px; /* Set your desired height */
+    border-radius: 50%; /* This is the key to making it a circle */
+    object-fit: cover;
+    border: 10px solid rgb(128, 128, 128);
+}
+
+.name {
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 800;
+    line-height: 55px;
+    margin-top: 15px;
+    color: white
+}
+
+.logo {
+    width: 25%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.bottomContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.lowerLink {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 22px;
+    color: white;
+}
+
+.lowerLink:hover {
+    text-decoration: none;
+}
+
+.seperator {
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white
+}
+
+@media (max-width: 1200px) {
+    .rootContainer {
+        height: revert;
+    }
+
+    .container {
+        /*background-color: red;*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .rightContainer {
+        width: 100%;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .circleImage {
+        width: 300px;
+        height: 300px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .bottomContainer {
+        padding-bottom: 50px;
+    }
+
+    .lowerLink {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 800px) {
+    .bottomContainer {
+        flex-direction: column;
+    }
+
+    .seperator {
+        display: none;
+    }
+
+    .lowerLink {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+}

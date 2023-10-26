@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "necti",
-  description: "Website Development",
+  title: "Dustin's Links",
+  description: "Links for Dustin Williams",
 };
 
 export default function RootLayout({ children }) {
@@ -11,13 +11,11 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         />
       </head>
       <body>
-        <div className="container">
-          {children}
-        </div>
+        <div className="container">{children}</div>
       </body>
     </html>
   );
