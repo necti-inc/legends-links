@@ -1,5 +1,6 @@
 import style from "./page.module.css";
 import theme from "./theme";
+import Head from "next/head";
 import Image from "next/image";
 import {
   faFacebook,
@@ -10,7 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faStore, faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
 
-import DUSTIN from "../../public/Dustin.png";
+import DUSTIN from "../../public/Dustin-Image.jpg";
 import LOGO from "../../public/Logo-White.png";
 import Button from "@/components/button/Button";
 import Spacer from "@/components/spacer/Spacer";
