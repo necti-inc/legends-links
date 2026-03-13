@@ -42,42 +42,42 @@ export default function Home() {
             />
             <Spacer />
             <Button
-              link={"https://www.youtube.com/@dustiinw"}
+              link={"https://us-central1-premier-ikon.cloudfunctions.net/dustins-links-monitor/youtube"}
               icon={faYoutube}
               title={"YOUTUBE"}
             />
             <Spacer />
 
             <Button
-              link={"https://legends.media/"}
+              link={"https://us-central1-premier-ikon.cloudfunctions.net/dustins-links-monitor/shop"}
               icon={faStore}
               title={"LEGENDS MEDIA"}
             />
             <Spacer />
 
             <Button
-              link={"https://www.instagram.com/dustiinw/"}
+              link={"https://us-central1-premier-ikon.cloudfunctions.net/dustins-links-monitor/instagram"}
               icon={faInstagram}
               title={"INSTAGRAM"}
             />
             <Spacer />
 
             <Button
-              link={"https://www.facebook.com/officialdustinwilliams/"}
+              link={"https://us-central1-premier-ikon.cloudfunctions.net/dustins-links-monitor/facebook"}
               icon={faFacebook}
               title={"FACEBOOK"}
             />
             <Spacer />
 
             <Button
-              link={"https://www.tiktok.com/@dustiinw?lang=en"}
+              link={"https://us-central1-premier-ikon.cloudfunctions.net/dustins-links-monitor/tiktok"}
               icon={faTiktok}
               title={"TIK TOK"}
             />
             <Spacer />
 
             <Button
-              link={"https://www.twitch.tv/dutofficial"}
+              link={"https://us-central1-premier-ikon.cloudfunctions.net/dustins-links-monitor/twitch"}
               icon={faTwitch}
               title={"TWITCH"}
             />
@@ -91,7 +91,7 @@ export default function Home() {
         <p className={style.seperator}>|</p>
         <a
           target={"_blank"}
-          href={"https://www.legends.media"}
+          href={"https://us-central1-premier-ikon.cloudfunctions.net/dustins-links-monitor/shop"}
           className={style.lowerLink}
         >
           WEBSITE: WWW.LEGENDS.MEDIA
